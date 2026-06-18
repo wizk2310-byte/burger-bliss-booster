@@ -1,9 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroBurger from "@/assets/hero-burger.jpg";
+import heroBurger from "@/assets/bbb-burgers-real.jpg";
 import milkshakes from "@/assets/milkshakes.jpg";
-import fries from "@/assets/fries.jpg";
 import momos from "@/assets/momos.jpg";
 import coffee from "@/assets/coffee.jpg";
+import logo from "@/assets/bbb-logo.jpg";
+import cart from "@/assets/bbb-cart.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
