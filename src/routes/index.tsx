@@ -75,7 +75,7 @@ function Home() {
       <header className="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur-md">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <a href="#top" className="flex items-center gap-2">
-            <span className="grid h-10 w-10 place-items-center rounded-full bg-primary text-primary-foreground font-display text-lg">B</span>
+            <img src={logo} alt="Burger Bliss Bistro logo" width={40} height={40} className="h-10 w-10 rounded-full object-cover ring-2 ring-secondary/40" />
             <span className="font-display text-lg tracking-tight">Burger Bliss<span className="text-primary">.</span></span>
           </a>
           <div className="hidden items-center gap-8 text-sm font-medium md:flex">
