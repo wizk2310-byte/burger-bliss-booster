@@ -1,9 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroBurger from "@/assets/hero-burger.jpg";
+import heroBurger from "@/assets/bbb-burgers-real.jpg";
 import milkshakes from "@/assets/milkshakes.jpg";
-import fries from "@/assets/fries.jpg";
 import momos from "@/assets/momos.jpg";
 import coffee from "@/assets/coffee.jpg";
+import logo from "@/assets/bbb-logo.jpg";
+import cart from "@/assets/bbb-cart.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -74,7 +75,7 @@ function Home() {
       <header className="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur-md">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <a href="#top" className="flex items-center gap-2">
-            <span className="grid h-10 w-10 place-items-center rounded-full bg-primary text-primary-foreground font-display text-lg">B</span>
+            <img src={logo} alt="Burger Bliss Bistro logo" width={40} height={40} className="h-10 w-10 rounded-full object-cover ring-2 ring-secondary/40" />
             <span className="font-display text-lg tracking-tight">Burger Bliss<span className="text-primary">.</span></span>
           </a>
           <div className="hidden items-center gap-8 text-sm font-medium md:flex">
@@ -197,6 +198,9 @@ function Home() {
             <h2 className="mt-4 font-display text-5xl leading-[0.95] md:text-6xl">
               Two friends.<br />One little<br />burger cart.
             </h2>
+            <div className="mt-8 overflow-hidden rounded-3xl border-4 border-accent/30 shadow-2xl">
+              <img src={cart} alt="Burger Bliss Bistro cart on Paud Road, Bhugaon at dusk" width={1280} height={853} className="h-full w-full object-cover" />
+            </div>
           </div>
           <div className="space-y-5 text-lg leading-relaxed text-secondary-foreground/85 md:col-span-3">
             <p>
@@ -281,7 +285,7 @@ function Home() {
       <footer className="border-t border-border bg-secondary text-secondary-foreground/80">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-8 md:flex-row">
           <div className="flex items-center gap-2 font-display text-lg text-secondary-foreground">
-            <span className="grid h-8 w-8 place-items-center rounded-full bg-primary text-primary-foreground">B</span>
+            <img src={logo} alt="Burger Bliss Bistro logo" width={32} height={32} className="h-8 w-8 rounded-full object-cover" />
             Burger Bliss Bistro
           </div>
           <p className="text-sm">© {new Date().getFullYear()} Burger Bliss Bistro · Bhugaon, Pune · Taste the Bliss.</p>
