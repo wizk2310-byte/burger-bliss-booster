@@ -198,6 +198,9 @@ function Home() {
             <h2 className="mt-4 font-display text-5xl leading-[0.95] md:text-6xl">
               Two friends.<br />One little<br />burger cart.
             </h2>
+            <div className="mt-8 overflow-hidden rounded-3xl border-4 border-accent/30 shadow-2xl">
+              <img src={cart} alt="Burger Bliss Bistro cart on Paud Road, Bhugaon at dusk" width={1280} height={853} className="h-full w-full object-cover" />
+            </div>
           </div>
           <div className="space-y-5 text-lg leading-relaxed text-secondary-foreground/85 md:col-span-3">
             <p>
